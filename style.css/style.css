@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* utility */
 
 .margin-top-15 {
@@ -159,11 +160,43 @@
 /* ex-10-13 */
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(1turn);
+    }
 }
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: half-rotation 3s linear;
+    transition: 5s;
+}
+
+@keyframes half-rotation {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(200deg);
+    }
+
+    75% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+
 
 .ex-12-button,
 .ex-13-button {
